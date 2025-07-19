@@ -101,7 +101,7 @@ export const products: Product[] = [
 ];
 
 export const categories = [
-  { name: "All", value: "" },
+  { name: "All", value: "all" },
   { name: "Electronics", value: "Electronics" },
   { name: "Fashion", value: "Fashion" },
   { name: "Home", value: "Home" }
