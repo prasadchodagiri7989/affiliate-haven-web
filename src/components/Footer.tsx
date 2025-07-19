@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Instagram, Youtube, ShoppingBag } from 'lucide-react';
 
 export const Footer = () => {
@@ -36,24 +37,24 @@ export const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-blue-200 hover:text-white transition-colors">
+                <Link to="/" className="text-blue-200 hover:text-white transition-colors">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-blue-200 hover:text-white transition-colors">
+                <Link to="/categories" className="text-blue-200 hover:text-white transition-colors">
                   Categories
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-blue-200 hover:text-white transition-colors">
+                <Link to="/products" className="text-blue-200 hover:text-white transition-colors">
                   Best Deals
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-blue-200 hover:text-white transition-colors">
+                <Link to="/contact" className="text-blue-200 hover:text-white transition-colors">
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
