@@ -1,6 +1,7 @@
 import { ArrowRight, Smartphone, Shirt, Home } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { Link } from 'react-router-dom';
 
 export const Hero = () => {
   const featuredCategories = [
@@ -36,13 +37,15 @@ export const Hero = () => {
             Find the best products from top retailers with exclusive discounts and deals. 
             Compare prices and shop smart.
           </p>
-          <Button 
-            size="lg" 
-            className="bg-white text-primary hover:bg-gray-100 text-lg px-8 py-3 animate-fade-in-up"
-          >
-            Shop Now
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          <Link to="/products">
+            <Button 
+              size="lg" 
+              className="bg-white text-primary hover:bg-gray-100 text-lg px-8 py-3 animate-fade-in-up"
+            >
+              Shop Now
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">

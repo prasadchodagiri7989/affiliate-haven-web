@@ -83,35 +83,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid lg:grid-cols-3 gap-8 mb-12">
-          {contactInfo.map((info, index) => {
-            const Icon = info.icon;
-            return (
-              <Card 
-                key={info.title} 
-                className="text-center bg-gradient-card shadow-[var(--shadow-card)] border-0 animate-fade-in-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <CardContent className="p-6">
-                  <div className="bg-primary/10 p-3 rounded-full w-fit mx-auto mb-4">
-                    <Icon className="h-8 w-8 text-primary" />
-                  </div>
-                  <h3 className="font-semibold text-foreground mb-2">
-                    {info.title}
-                  </h3>
-                  <p className="text-foreground font-medium mb-1">
-                    {info.content}
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    {info.description}
-                  </p>
-                </CardContent>
-              </Card>
-            );
-          })}
-        </div>
-
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid lg:grid-cols-2 gap-12">
           <div>
             <h2 className="text-3xl font-bold text-foreground mb-6">

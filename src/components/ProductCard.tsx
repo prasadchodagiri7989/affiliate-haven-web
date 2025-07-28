@@ -2,6 +2,7 @@ import { Star, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Product } from '@/data/products';
+import { Link } from 'react-router-dom';
 
 interface ProductCardProps {
   product: Product;
@@ -31,18 +32,20 @@ export const ProductCard = ({ product }: ProductCardProps) => {
 
   return (
     <Card className="product-card overflow-hidden bg-gradient-card shadow-[var(--shadow-card)] border-0">
-      <div className="relative">
-        <img
-          src={product.image}
-          alt={product.name}
-          className="w-full h-48 object-cover"
-        />
-        {product.originalPrice && (
-          <div className="absolute top-2 right-2 bg-success text-success-foreground px-2 py-1 rounded-md text-xs font-semibold">
-            {Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)}% OFF
-          </div>
-        )}
-      </div>
+      <Link to={`/product/${product.id}`}>
+        <div className="relative cursor-pointer">
+          <img
+            src={product.image}
+            alt={product.name}
+            className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
+          />
+          {product.originalPrice && (
+            <div className="absolute top-2 right-2 bg-success text-success-foreground px-2 py-1 rounded-md text-xs font-semibold">
+              {Math.round(((product.originalPrice - product.price) / product.originalPrice) * 100)}% OFF
+            </div>
+          )}
+        </div>
+      </Link>
       
       <CardContent className="p-4">
         <div className="mb-2">
@@ -51,9 +54,11 @@ export const ProductCard = ({ product }: ProductCardProps) => {
           </span>
         </div>
         
-        <h3 className="font-semibold text-foreground mb-2 line-clamp-2">
-          {product.name}
-        </h3>
+        <Link to={`/product/${product.id}`}>
+          <h3 className="font-semibold text-foreground mb-2 line-clamp-2 hover:text-primary transition-colors cursor-pointer">
+            {product.name}
+          </h3>
+        </Link>
         
         <p className="text-sm text-muted-foreground mb-3 line-clamp-2">
           {product.description}
