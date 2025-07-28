@@ -33,7 +33,7 @@ export const Navbar = ({ onSearch, searchQuery }: NavbarProps) => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <ShoppingBag className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold text-primary">DealFinder</span>
+            <span className="text-xl font-bold text-primary">ProductHunt</span>
           </Link>
 
           {/* Desktop Navigation */}

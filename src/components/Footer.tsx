@@ -8,7 +8,7 @@ export const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <ShoppingBag className="h-8 w-8" />
-              <span className="text-2xl font-bold">DealFinder</span>
+              <span className="text-2xl font-bold">ProductHunt</span>
             </div>
             <p className="text-blue-200 mb-6 max-w-md">
               Your trusted affiliate partner for finding the best deals on quality products. 
@@ -89,7 +89,7 @@ export const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-blue-200 text-sm mb-4 md:mb-0">
-            © 2024 DealFinder. All rights reserved.
+            © 2024 ProductHunt. All rights reserved.
           </p>
           
         </div>

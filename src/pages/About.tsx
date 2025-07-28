@@ -39,7 +39,7 @@ const About = () => {
       <div className="bg-gradient-primary text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            About DealFinder
+            About ProductHunt
           </h1>
           <p className="text-xl text-blue-100">
             Your trusted partner in finding the best deals on quality products
@@ -54,7 +54,7 @@ const About = () => {
               Our Mission
             </h2>
             <p className="text-muted-foreground text-lg mb-6">
-              At DealFinder, we believe everyone deserves access to quality products at the best prices. 
+              At ProductHunt, we believe everyone deserves access to quality products at the best prices. 
               We work tirelessly to find and curate the most amazing deals from trusted retailers like 
               Amazon and Flipkart.
             </p>
@@ -77,7 +77,7 @@ const About = () => {
 
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-foreground mb-4">
-            Why Choose DealFinder?
+            Why Choose ProductHunt?
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             We're more than just a deal aggregator. We're your shopping companion, 
