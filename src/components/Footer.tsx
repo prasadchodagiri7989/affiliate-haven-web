@@ -1,9 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Instagram, Youtube, ShoppingBag } from 'lucide-react';
-
 export const Footer = () => {
-  return (
-    <footer className="bg-primary text-primary-foreground">
+  return <footer className="bg-primary text-primary-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
@@ -93,14 +91,8 @@ export const Footer = () => {
           <p className="text-blue-200 text-sm mb-4 md:mb-0">
             © 2024 DealFinder. All rights reserved.
           </p>
-          <div className="bg-blue-800 px-4 py-2 rounded-lg border border-blue-600">
-            <p className="text-xs text-blue-200">
-              <strong>Affiliate Disclaimer:</strong> This website contains affiliate links. 
-              We may earn a commission when you make a purchase through these links at no additional cost to you.
-            </p>
-          </div>
+          
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
